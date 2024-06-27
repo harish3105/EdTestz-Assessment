@@ -1,0 +1,32 @@
+POST http://localhost:5000/api/users/signup
+Content-Type: application/json
+
+{
+    "username": "ashok1",
+    "password": "ashok123"
+}
+
+####
+POST http://localhost:5000/api/users/signin
+Content-Type: application/json
+
+{
+    "username": "ashok1",
+    "password": "ashok123"
+}
+
+
+####
+POST http://localhost:5000/api/appointments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhc2hvazEiLCJpYXQiOjE3MTkzOTMzODAsImV4cCI6MTcxOTM5Njk4MH0.5MPVkVRCgvowtMsVS170lyypTu1CMyzZDe4S7NSYeYA
+Content-Type: application/json
+
+{
+    "date": "2024-06-27T10:00:00Z",
+    "description": "Doctor appointment"
+}
+
+###
+GET http://localhost:5000/api/appointments
+Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhc2hvazEiLCJpYXQiOjE3MTkzOTMzODAsImV4cCI6MTcxOTM5Njk4MH0.5MPVkVRCgvowtMsVS170lyypTu1CMyzZDe4S7NSYeYA
+Content-Type: application/json
